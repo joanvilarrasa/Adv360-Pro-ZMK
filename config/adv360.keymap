@@ -27,22 +27,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                      &mo 3        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &kp RC(C)                                                   &none        &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp RC(V)  &kp LCTRL  &kp LALT      &kp LGUI     &kp RCTRL  &kp RA(TAB)  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                         &sl 2         &kp RS(TAB)                          &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 1      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC   &sl 1      &kp DEL       &kp TAB      &kp ENTER  &kp SPACE            &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 1
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                        &mo 3        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &kp RC(C)                                                     &none        &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp RC(V)  &kp LCTRL  &kp LALT      &kp RIGHT_ALT  &kp RCTRL  &kp RA(TAB)  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                         &sl 2         &kp LGUI                               &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 1      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC   &sl 1      &kp DEL       &kp TAB        &kp ENTER  &kp SPACE            &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 1
             >;
         };
 
         sym {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2          &kp F3            &kp F4                &kp F5                 &kp F6          &trans                                      &trans  &kp F7      &kp F8             &kp F9        &kp F10        &kp F11          &kp F12
-&trans  &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans                                      &trans  &trans      &kp DOUBLE_QUOTES  &kp PERCENT   &kp BACKSLASH  &kp AT_SIGN      &trans
-&trans  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL       &trans  &trans  &trans      &trans  &trans  &trans  &kp POUND   &kp SINGLE_QUOTE   &kp GRAVE     &kp COLON      &kp SEMICOLON    &trans
-&trans  &kp MINUS       &kp PLUS          &kp ASTERISK          &kp SLASH              &kp CARET                       &trans      &trans                  &kp DOLLAR  &kp AMPERSAND      &kp QUESTION  &kp PIPE       &kp EXCLAMATION  &trans
-&trans  &trans          &trans            &trans                &trans                                 &trans  &trans  &trans      &trans  &trans  &trans              &trans             &trans        &trans         &trans           &trans
+&kp F1  &kp F2          &kp F3            &kp F4                &kp F5                 &kp F6          &trans                                      &trans  &kp F7       &kp F8          &kp F9        &kp F10        &kp F11          &kp F12
+&trans  &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans                                      &trans  &kp PERCENT  &kp RA(GRAVE)   &kp RA(APOS)  &kp BACKSLASH  &kp AT_SIGN      &trans
+&trans  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS       &trans  &trans  &trans      &trans  &trans  &trans  &kp POUND    &kp APOSTROPHE  &kp GRAVE     &kp COLON      &kp SEMICOLON    &trans
+&trans  &kp EQUAL       &kp PLUS          &kp ASTERISK          &kp SLASH              &kp CARET                       &trans      &trans                  &kp DOLLAR   &kp AMPERSAND   &kp QUESTION  &kp PIPE       &kp EXCLAMATION  &trans
+&trans  &trans          &trans            &trans                &trans                                 &trans  &trans  &trans      &trans  &trans  &trans               &trans          &trans        &trans         &trans           &trans
             >;
 
             label = "symbol_layer";
