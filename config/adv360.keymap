@@ -53,7 +53,7 @@
             display-name = "Kp";
             bindings = <
 &kp F1  &kp F2  &kp F3    &kp F4        &kp F5     &kp F6         &trans                                      &trans  &kp F7     &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&trans  &trans  &trans    &kp UP_ARROW  &trans     &kp PAGE_UP    &trans                                      &trans  &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &trans
+&trans  &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &trans                                      &trans  &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &trans
 &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans  &trans  &trans      &trans  &trans  &trans  &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH     &trans
 &trans  &trans  &trans    &trans        &trans     &trans                         &trans      &trans                  &kp CARET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
 &trans  &trans  &trans    &trans        &trans                    &trans  &trans  &trans      &trans  &trans  &trans             &kp NUMBER_0  &kp PERIOD    &kp BSPC      &trans        &trans
