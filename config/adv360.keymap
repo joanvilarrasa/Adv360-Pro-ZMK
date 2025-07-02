@@ -27,22 +27,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp CAPSLOCK  &kp N1        &kp N2  &kp N3    &kp N4     &kp N5  &kp RA(C)                                                       &kp RA(N)      &kp N6  &kp N7     &kp N8     &kp N9     &kp N0          &kp RA(COLON)
-&kp TAB       &kp Q         &kp W   &kp E     &kp R      &kp T   &kp UP_ARROW                                                    &kp BACKSLASH  &kp Y   &kp U      &kp I      &kp O      &kp P           &kp RA(SQT)
-&kp ESC       &kp A         &kp S   &kp D     &kp F      &kp G   &kp DOWN      &kp LCTRL  &kp HOME          &kp END   &kp RCTRL  &kp SLASH      &kp H   &kp J      &kp K      &kp L      &kp SEMI        &kp RA(GRAVE)
-&kp LSHFT     &kp Z         &kp X   &kp C     &kp V      &kp B                            &kp LEFT_GUI      &kp LGUI                            &kp N   &kp M      &kp COMMA  &kp DOT    &kp APOSTROPHE  &kp RSHFT
-&sl 2         &kp LEFT_ALT  &mo 3   &kp LEFT  &kp RIGHT          &kp BSPC      &sl 1      &kp DEL           &kp TAB   &kp ENTER  &kp SPACE              &kp EQUAL  &kp UNDER  &kp MINUS  &kp RIGHT_ALT   &sl 2
+&kp CAPSLOCK  &kp N1        &kp N2  &kp N3    &kp N4     &kp N5  &kp LS(NUMBER_6)                                                    &kp DOLLAR     &kp N6  &kp N7            &kp N8     &kp N9     &kp N0         &kp RA(RS(SINGLE_QUOTE))
+&kp TAB       &kp Q         &kp W   &kp E     &kp R      &kp T   &kp UP_ARROW                                                        &kp BACKSLASH  &kp Y   &kp U             &kp I      &kp O      &kp P          &kp RA(SQT)
+&kp ESC       &kp A         &kp S   &kp D     &kp F      &kp G   &kp DOWN          &kp LCTRL  &kp HOME          &kp END   &kp RCTRL  &kp SLASH      &kp H   &kp J             &kp K      &kp L      &kp SEMI       &kp RA(GRAVE)
+&kp LSHFT     &kp Z         &kp X   &kp C     &kp V      &kp B                                &kp LEFT_GUI      &kp LGUI                            &kp N   &kp M             &kp COMMA  &kp DOT    &kp EQUAL      &kp RSHFT
+&sl 2         &kp LEFT_ALT  &sl 3   &kp LEFT  &kp RIGHT          &kp BSPC          &sl 1      &kp DEL           &kp TAB   &kp ENTER  &kp SPACE              &kp SINGLE_QUOTE  &kp UNDER  &kp MINUS  &kp RIGHT_ALT  &sl 2
             >;
         };
 
         sym {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2            &kp F3             &kp F4                &kp F5                 &kp F6     &trans                                      &trans  &kp F7            &kp F8        &kp F9         &kp F10      &kp F11            &kp F12
-&trans  &kp CARET         &kp SLASH          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &trans                                      &trans  &kp RA(EXCL)      &kp EXCL      &kp DOLLAR     &kp PERCENT  &kp ASTERISK       &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &trans  &trans  &trans      &trans  &trans  &trans  &kp RA(QUESTION)  &kp QUESTION  &kp HASH       &kp AT_SIGN  &kp COLON          &trans
-&trans  &kp LESS_THAN     &kp GREATER_THAN   &kp RA(C)             &kp ASTERISK           &kp EQUAL                  &trans      &trans                  &kp RA(N)         &kp PIPE      &kp AMPERSAND  &kp TILDE    &kp DOUBLE_QUOTES  &trans
-&trans  &trans            &trans             &trans                &trans                            &trans  &trans  &trans      &trans  &trans  &trans                    &kp PLUS      &trans         &trans       &trans             &trans
+&kp F1  &kp F2            &kp F3             &kp F4                &kp F5                 &kp F6     &kp RA(NUMBER_6)                                      &kp RA(N5)  &kp F7         &kp F8             &kp F9         &kp F10      &kp F11       &kp F12
+&trans  &kp CARET         &kp SLASH          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &trans                                                &trans      &kp RA(EXCL)   &kp EXCL           &kp DOLLAR     &kp PERCENT  &kp ASTERISK  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &trans            &trans  &trans      &trans  &trans  &trans      &kp RA(SLASH)  &kp QUESTION       &kp HASH       &kp AT_SIGN  &kp COLON     &trans
+&trans  &kp LESS_THAN     &kp GREATER_THAN   &kp RA(COMMA)         &kp ASTERISK           &kp EQUAL                            &trans      &trans                      &kp RA(N)      &kp PIPE           &kp AMPERSAND  &kp TILDE    &kp PLUS      &trans
+&trans  &trans            &trans             &trans                &trans                            &trans            &trans  &trans      &trans  &trans  &trans                     &kp DOUBLE_QUOTES  &trans         &trans       &trans        &trans
             >;
 
             label = "symbol_layer";
@@ -62,11 +62,11 @@
         mod {
             display-name = "Mod";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
-&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &none            &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none         &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none           &none       &none       &none  &none  &none
+&none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none           &none       &none       &none  &none  &none
+&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &none            &none           &none       &none       &none  &none  &none
+&none           &none         &none         &caps_word    &none         &none                             &none      &none                                    &kp KP_NUMLOCK  &none       &none       &none  &none  &none
+&none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                  &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
