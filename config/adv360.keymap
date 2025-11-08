@@ -27,22 +27,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp CAPSLOCK  &kp N1        &kp N2  &kp N3    &kp N4     &kp N5  &kp LS(NUMBER_6)                                                    &kp DOLLAR     &kp N6  &kp N7                &kp N8     &kp N9     &kp N0         &kp RA(RS(SINGLE_QUOTE))
-&kp TAB       &kp Q         &kp W   &kp E     &kp R      &kp T   &kp UP_ARROW                                                        &kp RA(GRAVE)  &kp Y   &kp U                 &kp I      &kp O      &kp P          &kp RA(SQT)
-&kp ESC       &kp A         &kp S   &kp D     &kp F      &kp G   &kp DOWN          &kp LCTRL  &kp HOME          &kp END   &kp RCTRL  &kp SLASH      &kp H   &kp J                 &kp K      &kp L      &kp SEMI       &kp SQT
-&kp LSHFT     &kp Z         &kp X   &kp C     &kp V      &kp B                                &kp LEFT_GUI      &kp LGUI                            &kp N   &kp M                 &kp COMMA  &kp DOT    &kp EQUAL      &kp RSHFT
-&sl 2         &kp LEFT_ALT  &sl 3   &kp LEFT  &kp RIGHT          &kp BSPC          &sl 1      &kp DEL           &kp TAB   &kp ENTER  &kp SPACE              &kp NON_US_BACKSLASH  &kp UNDER  &kp MINUS  &kp RIGHT_ALT  &sl 2
+&kp CAPSLOCK    &kp N1        &kp N2  &kp N3    &kp N4     &kp N5  &kp CARET                                                            &kp DOLLAR          &kp N6  &kp N7     &kp N8     &kp N9                &kp N0         &kp RA(RS(SINGLE_QUOTE))
+&trans          &kp Q         &kp W   &kp E     &kp R      &kp T   &kp UP_ARROW                                                         &kp RA(GRAVE)       &kp Y   &kp U      &kp I      &kp O                 &kp P          &kp ASTERISK
+&kp TAB         &kp A         &kp S   &kp D     &kp F      &kp G   &kp DOWN      &kp LCTRL  &sl 2             &sl 2          &kp RCTRL  &kp RA(APOSTROPHE)  &kp H   &kp J      &kp K      &kp L                 &kp SEMI       &kp SQT
+&kp ESCAPE      &kp Z         &kp X   &kp C     &kp V      &kp B                            &kp LEFT_GUI      &kp LEFT_GUI                                  &kp N   &kp M      &kp COMMA  &kp DOT               &kp MINUS      &kp EQUAL
+&kp LEFT_SHIFT  &kp LEFT_ALT  &sl 3   &kp LEFT  &kp RIGHT          &kp BSPC      &sl 1      &kp DEL           &kp RIGHT_ALT  &kp ENTER  &kp SPACE                   &kp SLASH  &kp UNDER  &kp NON_US_BACKSLASH  &kp RIGHT_ALT  &kp RIGHT_SHIFT
             >;
         };
 
         sym {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2            &kp F3             &kp F4                &kp F5                 &kp F6     &kp RA(NUMBER_6)                                      &kp RA(N5)  &kp F7         &kp F8        &kp F9         &kp F10      &kp F11       &kp F12
-&trans  &kp CARET         &kp SLASH          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &trans                                                &kp GRAVE   &kp RA(EXCL)   &kp EXCL      &kp DOLLAR     &kp PERCENT  &kp ASTERISK  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &trans            &trans  &trans      &trans  &trans  &trans      &kp RA(SLASH)  &kp QUESTION  &kp HASH       &kp AT_SIGN  &kp COLON     &kp DOUBLE_QUOTES
-&trans  &kp LESS_THAN     &kp GREATER_THAN   &kp RA(COMMA)         &kp ASTERISK           &kp EQUAL                            &trans      &trans                      &kp RA(N)      &kp PIPE      &kp AMPERSAND  &kp TILDE    &kp PLUS      &trans
-&trans  &trans            &trans             &trans                &trans                            &trans            &trans  &trans      &trans  &trans  &trans                     &trans        &trans         &trans       &trans        &trans
+&kp F1  &kp F2         &kp F3                &kp F4         &kp F5                 &kp F6            &kp RA(NUMBER_6)                                      &kp RA(N5)           &kp F7        &kp F8       &kp F9         &kp F10      &kp F11  &kp F12
+&trans  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp ASTERISK   &kp RIGHT_PARENTHESIS  &kp TILDE         &trans                                                &kp RA(EXCLAMATION)  &kp EXCL      &kp PIPE     &kp AMPERSAND  &kp CARET    &trans   &trans
+&trans  &kp LESS_THAN  &kp LEFT_BRACKET      &kp PLUS       &kp RIGHT_BRACKET      &kp GREATER_THAN  &trans            &trans  &trans      &trans  &trans  &kp RA(SLASH)        &kp QUESTION  &kp PERCENT  &kp DOLLAR     &kp AT_SIGN  &trans   &trans
+&trans  &trans         &kp LEFT_BRACE        &kp RA(COMMA)  &kp RIGHT_BRACE        &trans                                      &trans      &trans                               &kp RA(N)     &kp HASH     &trans         &trans       &trans   &trans
+&trans  &trans         &trans                &trans         &trans                                   &trans            &trans  &trans      &trans  &trans  &trans                             &trans       &trans         &trans       &trans   &trans
             >;
 
             label = "symbol_layer";
@@ -51,11 +51,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp F1  &kp F2  &kp F3    &kp F4        &kp F5     &kp F6         &kp K_MUTE                                             &trans  &kp F7        &kp F8        &kp F9        &kp F10       &kp F11  &kp F12
-&trans  &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp C_VOLUME_UP                                        &trans  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans   &trans
-&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp C_VOLUME_DOWN  &trans  &trans      &trans  &trans  &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans   &trans
-&trans  &trans  &trans    &trans        &trans     &trans                                    &trans      &trans                  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans   &trans
-&trans  &trans  &trans    &trans        &trans                    &trans             &trans  &trans      &trans  &trans  &trans                &trans        &kp PERIOD    &kp BSPC      &trans   &trans
+&kp F1  &kp F2  &kp F3    &kp F4        &kp F5     &kp F6  &trans                                      &trans  &kp F7  &kp F8        &kp F9        &kp F10       &kp F11  &kp F12
+&trans  &trans  &trans    &kp UP_ARROW  &trans     &trans  &trans                                      &trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans   &trans
+&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans   &trans
+&trans  &trans  &trans    &trans        &trans     &trans                  &trans      &trans                  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans   &trans
+&trans  &trans  &trans    &trans        &trans             &trans  &trans  &trans      &trans  &trans  &trans          &kp NUMBER_0  &trans        &kp PERIOD    &trans   &trans
             >;
         };
 
