@@ -27,22 +27,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp CAPSLOCK    &kp N1        &kp N2  &kp N3    &kp N4     &kp N5  &kp CARET                                                            &kp DOLLAR     &kp N6  &kp N7         &kp N8     &kp N9     &kp N0         &kp RA(RS(SINGLE_QUOTE))
-&trans          &kp Q         &kp W   &kp E     &kp R      &kp T   &kp UP_ARROW                                                         &kp RA(GRAVE)  &kp Y   &kp U          &kp I      &kp O      &kp P          &kp RA(APOSTROPHE)
-&kp TAB         &kp A         &kp S   &kp D     &kp F      &kp G   &kp DOWN      &kp LCTRL  &sl 2             &sl 2          &kp RCTRL  &kp ASTERISK   &kp H   &kp J          &kp K      &kp L      &kp SEMI       &kp SQT
-&kp ESCAPE      &kp Z         &kp X   &kp C     &kp V      &kp B                            &kp LEFT_GUI      &kp LEFT_GUI                             &kp N   &kp M          &kp COMMA  &kp DOT    &kp MINUS      &kp EQUAL
-&kp LEFT_SHIFT  &kp LEFT_ALT  &sl 3   &kp LEFT  &kp RIGHT          &kp BSPC      &sl 1      &kp DEL           &kp RIGHT_ALT  &kp ENTER  &kp SPACE              &kp BACKSLASH  &kp UNDER  &kp SLASH  &kp RIGHT_ALT  &kp RIGHT_SHIFT
+&kp CAPSLOCK    &kp N1        &kp N2    &kp N3     &kp N4     &kp N5  &sl 3                                                                &kp DOLLAR     &kp N6  &kp N7         &kp N8     &kp N9     &kp N0         &kp RA(RS(SINGLE_QUOTE))
+&trans          &kp Q         &kp W     &kp E      &kp R      &kp T   &kp UP_ARROW                                                         &kp RA(GRAVE)  &kp Y   &kp U          &kp I      &kp O      &kp P          &kp RA(APOSTROPHE)
+&kp ESCAPE      &kp A         &kp S     &kp D      &kp F      &kp G   &kp DOWN      &kp LCTRL  &sl 2             &sl 2          &kp RCTRL  &kp ASTERISK   &kp H   &kp J          &kp K      &kp L      &kp SEMI       &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X     &kp C      &kp V      &kp B                            &kp LEFT_GUI      &kp LEFT_GUI                             &kp N   &kp M          &kp COMMA  &kp DOT    &kp MINUS      &kp RIGHT_SHIFT
+&kp TAB         &kp LEFT_ALT  &kp LEFT  &kp CARET  &kp RIGHT          &kp BSPC      &sl 1      &kp DEL           &kp RIGHT_ALT  &kp ENTER  &kp SPACE              &kp BACKSLASH  &kp UNDER  &kp SLASH  &kp RIGHT_ALT  &kp EQUAL
             >;
         };
 
         sym {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2         &kp F3                &kp F4         &kp F5                 &kp F6            &kp RA(NUMBER_6)                                      &kp RA(N5)           &kp F7        &kp F8       &kp F9         &kp F10      &kp F11  &kp F12
-&trans  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp ASTERISK   &kp RIGHT_PARENTHESIS  &kp TILDE         &trans                                                &kp RA(EXCLAMATION)  &kp EXCL      &kp PIPE     &kp AMPERSAND  &kp CARET    &trans   &trans
-&trans  &kp LESS_THAN  &kp LEFT_BRACKET      &kp PLUS       &kp RIGHT_BRACKET      &kp GREATER_THAN  &trans            &trans  &trans      &trans  &trans  &kp RA(SLASH)        &kp QUESTION  &kp PERCENT  &kp DOLLAR     &kp AT_SIGN  &trans   &trans
-&trans  &trans         &kp LEFT_BRACE        &kp RA(COMMA)  &kp RIGHT_BRACE        &trans                                      &trans      &trans                               &kp RA(N)     &kp HASH     &trans         &trans       &trans   &trans
-&trans  &trans         &trans                &trans         &trans                                   &trans            &trans  &trans      &trans  &trans  &trans                             &trans       &trans         &trans       &trans   &trans
+&kp F1  &kp F2         &kp F3                &kp F4            &kp F5                 &kp F6            &trans                                      &kp RA(N5)           &kp F7        &kp F8       &kp F9         &kp F10      &kp F11  &kp F12
+&trans  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp ASTERISK      &kp RIGHT_PARENTHESIS  &kp TILDE         &trans                                      &kp RA(EXCLAMATION)  &kp EXCL      &kp PIPE     &kp AMPERSAND  &kp CARET    &trans   &trans
+&trans  &kp LESS_THAN  &kp LEFT_BRACKET      &kp PLUS          &kp RIGHT_BRACKET      &kp GREATER_THAN  &trans  &trans  &trans      &trans  &trans  &kp RA(SLASH)        &kp QUESTION  &kp PERCENT  &kp DOLLAR     &kp AT_SIGN  &trans   &trans
+&trans  &trans         &kp LEFT_BRACE        &kp RA(COMMA)     &kp RIGHT_BRACE        &trans                            &trans      &trans                               &kp RA(N)     &kp HASH     &trans         &trans       &trans   &trans
+&trans  &trans         &trans                &kp RA(NUMBER_6)  &trans                                   &trans  &trans  &trans      &trans  &trans  &trans                             &trans       &trans         &trans       &trans   &trans
             >;
 
             label = "symbol_layer";
